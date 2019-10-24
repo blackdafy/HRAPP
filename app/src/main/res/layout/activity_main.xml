@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B324C"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo_meikarta" />
+
+            <!--<TextView
+                android:id="@+id/TextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="www.meikarta.com"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/View1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#448AFF" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="NIK"/>
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/txt_id"
+                    android:layout_alignStart="@+id/txt_id"
+                    android:layout_alignLeft="@+id/txt_id"
+                    android:layout_alignEnd="@+id/txt_id"
+                    android:layout_alignRight="@+id/txt_id"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text="User ID"/>
+
+                <TextView
+                    android:id="@+id/txt_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/txt_username"
+                    android:layout_alignStart="@+id/txt_username"
+                    android:layout_alignLeft="@+id/txt_username"
+                    android:layout_alignEnd="@+id/txt_username"
+                    android:layout_alignRight="@+id/txt_username"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Name"/>
+                <TextView
+                    android:id="@+id/txt_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/txt_nickname"
+                    android:layout_alignStart="@+id/txt_nickname"
+                    android:layout_alignLeft="@+id/txt_nickname"
+                    android:layout_alignEnd="@+id/txt_nickname"
+                    android:layout_alignRight="@+id/txt_nickname"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text="IN"/>
+                <TextView
+                    android:id="@+id/txt_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/txt_login"
+                    android:layout_alignStart="@+id/txt_login"
+                    android:layout_alignLeft="@+id/txt_login"
+                    android:layout_alignEnd="@+id/txt_login"
+                    android:layout_alignRight="@+id/txt_login"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text="OUT"/>
+                <!--<TextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/txt_logout"
+                    android:layout_alignStart="@+id/txt_logout"
+                    android:layout_alignLeft="@+id/txt_logout"
+                    android:layout_alignEnd="@+id/txt_logout"
+                    android:layout_alignRight="@+id/txt_logout"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Location"/>-->
+                <TextView
+                    android:id="@+id/lat_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/txt_logout"
+                    android:layout_alignStart="@+id/txt_logout"
+                    android:layout_alignLeft="@+id/txt_logout"
+                    android:layout_alignEnd="@+id/txt_logout"
+                    android:layout_alignRight="@+id/txt_logout"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Latitude"/>
+                <TextView
+                    android:id="@+id/long_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/lat_location"
+                    android:layout_alignStart="@+id/lat_location"
+                    android:layout_alignLeft="@+id/lat_location"
+                    android:layout_alignEnd="@+id/lat_location"
+                    android:layout_alignRight="@+id/lat_location"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Longitude"/>
+
+
+                <Button
+                    android:id="@+id/btnin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/long_location"
+                    android:layout_below="@+id/long_location"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="IN" />
+
+                <Button
+                    android:id="@+id/btnout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/btnin"
+                    android:layout_below="@+id/long_location"
+                    android:text="OUT" />
+
+                <!--<Button
+                    android:id="@+id/btnbrin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btnin"
+                    android:layout_below="@+id/btnin"
+                    android:layout_marginTop="20dp"
+                    android:text="Break IN" />
+
+                <Button
+                    android:id="@+id/btnbrout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/btnbrin"
+                    android:layout_below="@+id/btnout"
+                    android:text="Break OUT" />-->
+                <!--<Button
+                    android:id="@+id/btnoverin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btnbrin"
+                    android:layout_below="@+id/btnbrin"
+                    android:layout_marginTop="20dp"
+                    android:text="OT IN" />
+
+                <Button
+                    android:id="@+id/btnoverout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/btnoverin"
+                    android:layout_below="@+id/btnbrout"
+                    android:text="OT OUT" />-->
+
+                <!-- <fragment
+                     android:id="@+id/map"
+                     android:layout_alignStart="@+id/long_location"
+                     android:layout_below="@+id/btnoverin"
+                     class="com.google.android.gms.maps.SupportMapFragment"
+                     android:layout_width="320dp"
+                     android:layout_height="200dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_alignLeft="@+id/btnoverin" />-->
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Logout"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
